@@ -789,9 +789,8 @@
 									setTimeout(function(){
 										_.pic
 											.css({
-												width:_.width=img.width(),
-												height:_.height=img.height(),
-												background:_.preset=='zoomer'?'none':('url('+_.itms[_.show]+') 0 0 no-repeat')
+												'background':_.preset=='zoomer'?'none':('url('+_.itms[_.show]+') 0 0 no-repeat'),
+                                                'background-size': 'cover'
 											})
 										img.remove()
 										_.current=_.buff=_.show
