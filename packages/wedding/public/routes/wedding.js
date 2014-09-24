@@ -2,7 +2,7 @@
 
 //Setting up route
 angular.module('mean.wedding').config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('home page', {
+    $stateProvider.state('home', {
         url: '/home',
         templateUrl: 'wedding/views/index.html'
     }).state('wedding', {
@@ -24,5 +24,4 @@ angular.module('mean.wedding').config(['$stateProvider', '$urlRouterProvider', f
     });
 
     $urlRouterProvider.otherwise('/home');
-}
-]);
+}]);

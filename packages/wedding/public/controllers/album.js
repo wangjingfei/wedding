@@ -19,5 +19,5 @@ angular.module('mean.wedding').controller('AlbumController', ['$scope', function
         banners: false,
         waitBannerAnimation: false,
         progressBar: false
-    })
+    });
 }]);
