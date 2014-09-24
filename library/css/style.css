@@ -8,7 +8,7 @@ body {
 	background: #fff;
 }
 .ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
-.sub-pages {background:url(../images/sub-pages-bg.jpg) center 0 no-repeat #fff; min-height:122px; margin-bottom:38px;}
+.sub-pages {background:url(/wedding/assets/img/sub-pages-bg.jpg) center 0 no-repeat #fff; min-height:122px; margin-bottom:38px;}
 /***********************************************************************/
 a {text-decoration:none; cursor:pointer;text-decoration:none; }
 a:hover {text-decoration:none;}
@@ -21,7 +21,7 @@ a:hover {text-decoration:none;}
 
 .link {color:#937bb8; text-decoration:underline; }
 .link:hover {text-decoration:none;}
-.link-1 { font-size:14px; line-height:18px; color:#937bb8; text-decoration:underline; display:inline-block; float:right; background:url(../images/link-1.gif) right 7px no-repeat; padding-right:10px; margin-top:6px; }
+.link-1 { font-size:14px; line-height:18px; color:#937bb8; text-decoration:underline; display:inline-block; float:right; background:url(/wedding/assets/img/link-1.gif) right 7px no-repeat; padding-right:10px; margin-top:6px; }
 .link-1:hover {text-decoration:none;}
 
 .clr-1 { color:#1d1d1d;}
@@ -43,7 +43,7 @@ h4 strong { font-family: 'PT Sans Narrow', sans-serif; font-size:48px; line-heig
 .h4-border {border-bottom:#dddddd 1px solid;}
 
 ul {margin:0; padding:0;list-style-image:none;}
-ul.list-1 li {padding:0px 0 10px 15px; line-height:18px; background:url(../images/marker-1.gif) 0 6px no-repeat;}
+ul.list-1 li {padding:0px 0 10px 15px; line-height:18px; background:url(/wedding/assets/img/marker-1.gif) 0 6px no-repeat;}
 ul.list-1 li a { font-size:14px; color:#937bb8; line-height:18px; text-decoration:underline;}
 ul.list-1 li a:hover {text-decoration:none;}
 
@@ -92,28 +92,28 @@ ul.menu li a {font-size:16px; line-height:24px; color:#fff; font-family: 'PT San
 ul.menu li a:hover , ul.menu li.current a { color:#000; }
 
 /*********************************content*************************************/
-#content {width:960px; margin:0 auto; padding:0px 0px 27px 0; background:url(../images/line.gif) center 0 no-repeat;}
+#content {width:960px; margin:0 auto; padding:0px 0px 27px 0; background:url(/wedding/assets/img/line.gif) center 0 no-repeat;}
 
 .img-border {border:#dddddd 1px solid;}
 .p-border {border-bottom:#dddddd 1px solid; padding-bottom:15px;} 
-.line-2 {margin:23px 0 0 -8px; background:url(../images/line-2.png) 0 0 no-repeat; width:14px; height:441px; }
-.line-3 {margin:28px 0 0 -8px; background:url(../images/line-3.png) 0 0 no-repeat; width:14px; height:461px; }
-.line-4 {margin:28px 0 0 -8px; background:url(../images/line-4.png) 0 0 no-repeat; width:14px; height:499px; }
-.line-5 {margin:28px 0 0 -18px; background:url(../images/line-5.png) 0 0 no-repeat; width:14px; height:324px; }
+.line-2 {margin:23px 0 0 -8px; background:url(/wedding/assets/img/line-2.png) 0 0 no-repeat; width:14px; height:441px; }
+.line-3 {margin:28px 0 0 -8px; background:url(/wedding/assets/img/line-3.png) 0 0 no-repeat; width:14px; height:461px; }
+.line-4 {margin:28px 0 0 -8px; background:url(/wedding/assets/img/line-4.png) 0 0 no-repeat; width:14px; height:499px; }
+.line-5 {margin:28px 0 0 -18px; background:url(/wedding/assets/img/line-5.png) 0 0 no-repeat; width:14px; height:324px; }
 
 .box-1 {overflow:hidden;}
 .box-1 .extra-wrap {border-top:#dddddd 1px solid; padding-top:23px;}
 
 .comments {background:#e1e1e1; position:relative; margin-top:14px; padding:18px 12px 27px 16px;}
-.comments .comments-corner {position:absolute; background:url(../images/comments-corner.png) 0 0 no-repeat; width:26px; height:24px; top:-24px; left:164px;}
-.comments .comment-1 {background:url(../images/comment-1.png) 0 0 no-repeat; padding-left:24px;}
-.comments .comment-2 {background:url(../images/comment-2.png) right bottom no-repeat;}
+.comments .comments-corner {position:absolute; background:url(/wedding/assets/img/comments-corner.png) 0 0 no-repeat; width:26px; height:24px; top:-24px; left:164px;}
+.comments .comment-1 {background:url(/wedding/assets/img/comment-1.png) 0 0 no-repeat; padding-left:24px;}
+.comments .comment-2 {background:url(/wedding/assets/img/comment-2.png) right bottom no-repeat;}
 
 .comments-2 {background:#e1e1e1; position:relative; margin-top:10px; padding:18px 16px 16px 24px; width:190px;color:#b5b5b5; }
-.comments-2 .comments-corner {position:absolute; background:url(../images/comments-corner-2.png) 0 0 no-repeat; width:24px; height:26px; bottom:-26px; left:123px;}
+.comments-2 .comments-corner {position:absolute; background:url(/wedding/assets/img/comments-corner-2.png) 0 0 no-repeat; width:24px; height:26px; bottom:-26px; left:123px;}
 .comments-2 i {margin-left:20px;}
-.comments-2 .comment-1 {background:url(../images/comment-1.png) 0 0 no-repeat; }
-.comments-2 .comment-2 {background:url(../images/comment-2.png) right bottom no-repeat;}
+.comments-2 .comment-1 {background:url(/wedding/assets/img/comment-1.png) 0 0 no-repeat; }
+.comments-2 .comment-2 {background:url(/wedding/assets/img/comment-2.png) right bottom no-repeat;}
 .comments-2-name {text-align:right; margin:5px 20px 0 0;}
 
 .box-2 {float:left; width:190px; margin-right:10px;}
@@ -124,21 +124,21 @@ ul.menu li a:hover , ul.menu li.current a { color:#000; }
 
 .box-3 .fleft { float:left; margin-right:10px; }
 .comments-3 {background:#e1e1e1; position:relative; padding:24px 16px 25px 24px; width:190px;color:#b5b5b5;}
-.comments-3 .comments-corner {position:absolute; background:url(../images/comments-corner-3.png) 0 0 no-repeat; width:22px; height:22px; bottom:-22px; left:94px;}
+.comments-3 .comments-corner {position:absolute; background:url(/wedding/assets/img/comments-corner-3.png) 0 0 no-repeat; width:22px; height:22px; bottom:-22px; left:94px;}
 .comments-3 i {margin-left:20px;}
-.comments-3 .comment-1 {background:url(../images/comment-1.png) 0 0 no-repeat; }
-.comments-3 .comment-2 {background:url(../images/comment-2.png) right bottom no-repeat;}
+.comments-3 .comment-1 {background:url(/wedding/assets/img/comment-1.png) 0 0 no-repeat; }
+.comments-3 .comment-2 {background:url(/wedding/assets/img/comment-2.png) right bottom no-repeat;}
 .comments-3-name {text-align:right; margin:5px 0px 0 0;}
 
 .box-4 .fleft { float:left; margin-right:10px; width:230px; }
 
 .comments-4 {background:#e1e1e1; position:relative; margin-top:14px; padding:15px 16px 21px 16px;}
-.comments-4 .comments-corner {position:absolute; background:url(../images/comments-corner.png) 0 0 no-repeat; width:26px; height:24px; top:-24px; left:124px;}
-.comments-4 .comment-1 {background:url(../images/comment-1.png) 0 2px no-repeat; padding-left:24px;}
-.comments-4 .comment-2 {background:url(../images/comment-2.png) right bottom no-repeat;}
+.comments-4 .comments-corner {position:absolute; background:url(/wedding/assets/img/comments-corner.png) 0 0 no-repeat; width:26px; height:24px; top:-24px; left:124px;}
+.comments-4 .comment-1 {background:url(/wedding/assets/img/comment-1.png) 0 2px no-repeat; padding-left:24px;}
+.comments-4 .comment-2 {background:url(/wedding/assets/img/comment-2.png) right bottom no-repeat;}
 
 /****************************footer************************/
-footer {width:950px; overflow:hidden; margin:0 auto; padding:23px 0px 20px 0; background:url(../images/line.gif) center 0 no-repeat; font-family:Tahoma, Geneva, sans-serif; font-size:12px;}
+footer {width:950px; overflow:hidden; margin:0 auto; padding:23px 0px 20px 0; background:url(/wedding/assets/img/line.gif) center 0 no-repeat; font-family:Tahoma, Geneva, sans-serif; font-size:12px;}
 footer p {float:left; width:320px; padding-top:3px; }
 .soc-icons {overflow:hidden; float:right;}
 .soc-icons a {display:inline-block; float:left;}
