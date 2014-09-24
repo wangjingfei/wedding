@@ -2,11 +2,9 @@
     "core": {
         "css": {
             "bower_components/build/css/dist.min.css": [
-                "library/css/demo.css",
                 "library/css/fonts.css",
-                "library/css/grid_24.css",
-                "library/css/ie.css",
                 "library/css/reset.css",
+                "library/css/grid_24.css",
                 "library/css/slider.css",
                 "library/css/style.css"
             ]

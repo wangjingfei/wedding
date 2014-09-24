@@ -20,6 +20,6 @@ angular.module('mean.wedding').controller('HomeController', ['$scope', function 
             banners: false,
             waitBannerAnimation: false,
             progressBar: false
-        })
+        });
     });
 }]);
