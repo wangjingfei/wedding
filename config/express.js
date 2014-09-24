@@ -100,4 +100,7 @@ module.exports = function(app, passport, db) {
 
   // Connect flash for flash messages
   app.use(flash());
+
+  // Use static files for library.
+  app.use('/library', express.static(config.root + '/library'));
 };
