@@ -13,10 +13,10 @@
         },
         "js": {
             "bower_components/build/js/dist.min.js": [
-                "library/js/tms-0.4.1.js",
-                "library/js/uCarousel.js",
                 "bower_components/jquery/dist/jquery.min.js",
                 "bower_components/jquery-easing/jquery-easing.js",
+                "library/js/tms-0.4.1.js",
+                "library/js/uCarousel.js",
                 "bower_components/angular/angular.js",
                 "bower_components/angular-mocks/angular-mocks.js",
                 "bower_components/angular-cookies/angular-cookies.js",

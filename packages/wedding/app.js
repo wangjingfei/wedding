@@ -48,8 +48,5 @@ Wedding.register(function(app, auth, database) {
       //you now have the settings object
     });
     */
-  Wedding.aggregateAsset('css', 'articles.css');
-
   return Wedding;
 });
-

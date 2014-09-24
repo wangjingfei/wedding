@@ -1,9 +1,9 @@
 {
-  "name": "articles",
+  "name": "wedding",
   "version": "0.0.1",
-  "description": "Articles example package",
+  "description": "Wedding",
   "author": {
-    "name": "Linnovate"
+    "name": "Fify"
   },
   "mean": "0.4.x",
   "engines": {
