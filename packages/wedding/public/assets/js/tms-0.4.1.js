@@ -3,7 +3,7 @@
 ;(function($){
 	$.fn.TMSlider=$.fn.TMS=$.fn._TMS=function(o){
 		return this.each(function(){
-			var th=$(this),				
+			var th=$(this),
 				_=th.data('_TMS')||{
 					presets:{
 						centralExpand:{"reverseWay":false,"interval":80,"blocksX":8,"blocksY":4,"easing":"easeInQuad","way":"diagonal","anim":"centralExpand"},
@@ -22,7 +22,7 @@
 						horizontalLines:{"reverseWay":false,"interval":1,"blocksX":1,"blocksY":12,"easing":"swing","way":"lines","anim":"gSlideOdd"},
 						random:{prsts:['centralExpand','fadeThree','simpleFade','gSlider','vSlider','slideFromLeft','slideFromTop','diagonalFade','diagonalExpand','fadeFromCenter','zabor','vertivalLines','gorizontalLines']}
 					},
-					ways: {				
+					ways: {
 						lines: function () {
 							var opt=this
 							for (var ret = [], i = 0; i < opt.maskC.length; i++)
@@ -119,15 +119,15 @@
 						}
 					},
 
-					anims: {			
-						centralExpand:function(el,last){				
+					anims: {
+						centralExpand:function(el,last){
 							$(el).each(function(){
 								var th=$(this).css({visibility:'hidden'}),
 									x=th.show().prop('offsetLeft'),
 									y=th.show().prop('offsetTop'),
 									w=th.width(),
 									h=th.height()
-														
+
 								th
 									.stop()
 									.css({
@@ -145,7 +145,7 @@
 										// top:y
 									},{
 										step:function(now){
-											var pc=(1-(w-now)/100)								
+											var pc=(1-(w-now)/100)
 											th
 												.css({
 													height:h*pc,
@@ -154,7 +154,7 @@
 													backgroundPosition:'-'+(x+((w/2)*(1-pc)))+'px -'+(y+((h/2)*(1-pc)))+'px',
 													opacity:pc
 												})
-											
+
 										},
 										duration:_.duration,
 										easing:_.easing,
@@ -163,14 +163,14 @@
 										}
 									})
 							})
-						},			
+						},
 						fadeThree:function(el,last){
 							var _=this
 							$(el).each(function(i){
 								var th=$(this).show().css({left:-_.width/4,top:0,zIndex:2,opacity:0}),
 									clone=th.clone().appendTo(th.parent()).css({left:_.width/4,top:_.height/4,zIndex:1}),
 									clone2=th.clone().appendTo(th.parent()).css({left:0,top:-_.height/4,zIndex:1})
-								//console.log(_.duration)	
+								//console.log(_.duration)
 								clone
 									.stop()
 									.animate({
@@ -191,7 +191,7 @@
 										duration:_.duration,
 										easing:_.easing
 									})
-								th	
+								th
 									.stop()
 									.animate({
 										left:0,
@@ -199,7 +199,7 @@
 										opacity:1
 									},{
 										duration:_.duration,
-										easing:_.easing,							
+										easing:_.easing,
 										complete:function(){
 											if(last)_.afterShow()
 											clone.remove()
@@ -211,7 +211,7 @@
 						zoomer:function(el,last){
 							if(_.slideshow)
 								_.slideshow=_.duration-2000
-							
+
 							el.each(function(){
 								var src=_.next
 								,ie=$.browser.msie&&$.browser.version<9
@@ -259,17 +259,17 @@
 										if(_.paused)
 											return false
 										if(state>=1){
-											clearInterval(_.int)								
+											clearInterval(_.int)
 											return false
 										}
-										
+
 										state+=step
-										
+
 										refresh(state)
-									},40)			
+									},40)
 								}
 								,calcCSS=function(width,height,k){
-									var motion='zoom,move'.split(',')[~~(Math.random()*2)]		
+									var motion='zoom,move'.split(',')[~~(Math.random()*2)]
 										,side='left,right,top,bottom,leftTop,leftBottom,center'.split(',')[~~(Math.random()*7)]
 										,reverse=[false,true][~~(Math.random()*2)]
 										,css={
@@ -284,7 +284,7 @@
 												,height:height*k
 											}
 										}
-									
+
 									swtch(motion,{
 										zoom:function(){
 											css.finish=swtch(side,{
@@ -300,7 +300,7 @@
 													left:-(width*k-width)/2
 													,top:0
 												}
-												,bottom:{ 
+												,bottom:{
 													left:-(width*k-width)/2
 													,top:-(height*k-height)
 												}
@@ -326,23 +326,23 @@
 												}
 											})
 											css.finish.width=width*k
-											css.finish.height=height*k			
+											css.finish.height=height*k
 										}
 										,move:function(){
 											css=$.extend(true,css,side!='center'?{start:{width:width*k,height:height*k}}:{})
-											
+
 											css=$.extend(true,css,swtch(side,{
 												left:{
-													finish:{						
+													finish:{
 														left:0
 														,top:-(height*k-height)
 													}
 												}
 												,right:{
-													start:{						
-														left:-(width*k-width)						
+													start:{
+														left:-(width*k-width)
 													}
-													,finish:{						
+													,finish:{
 														left:-(width*k-width)
 														,top:-(height*k-height)
 													}
@@ -362,12 +362,12 @@
 														,top:-(height*k-height)
 													}
 												}
-												,leftTop:{					
+												,leftTop:{
 													finish:{
 														left:-(width*k-width)
 														,top:-(height*k-height)
 													}
-												}				
+												}
 												,leftBottom:{
 													start:{
 														top:-(height*k-height)
@@ -393,7 +393,7 @@
 									return css
 								}
 							buff
-								.css({			
+								.css({
 									left:'-999%'
 									,top:'-999%'
 									,position:'absolute'
@@ -402,7 +402,7 @@
 								.load(function(){
 									width=buff.width()
 									height=buff.height()
-									
+
 									if(!ie)
 										canvas
 											.appendTo(wrap.appendTo(holder))
@@ -422,16 +422,16 @@
 									_.afterShow()
 									_.bl=true
 									wrap
-										.stop()							
+										.stop()
 										.animate({
 											opacity:1
 										},{
 											duration:_.presetParam.crossFadeDur||2000
-											,complete:function(){									
+											,complete:function(){
 												// console.log(holder)
 												// holder.children()
 													// .not(wrap)
-												
+
 														// .remove()
 											}
 										})
@@ -463,7 +463,7 @@
 									}
 								})
 							})
-						},		
+						},
 						expand: function (el, last) {
 							var opt=this
 							$(el).each(function () {
@@ -639,7 +639,7 @@
 										}
 									})
 							})
-						},			
+						},
 						gSlider: function (el, last) {
 							var opt=this,
 								clone = opt.maskC.clone(),
@@ -753,7 +753,7 @@
 						duration:1000,
 						easing:'linear',
 						way:'lines',
-						anim:'fade',		
+						anim:'fade',
 						pagination:false,
 						banners:false,
 						waitBannerAnimation:true,
@@ -773,14 +773,14 @@
 							_.mask=$(_.etal)
 								.addClass(_.mask)
 								.appendTo(_.pic)
-							
+
 							if(_.me.css('position')=='static')
 								_.me.css({position:'relative'})
 							if(_.me.css('z-index')=='auto')
 								_.me.css({zIndex:1})
-								
+
 							_.me.css({overflow:_.overflow})
-							
+
 							if(_.items)
 								_.parseImgFu()
 							img
@@ -794,7 +794,7 @@
 											})
 										img.remove()
 										_.current=_.buff=_.show
-										var t						
+										var t
 										if(_.preset=='zoomer')
 											t=_.n
 											,_.n=-1
@@ -814,7 +814,7 @@
 								fH=_.pic.height()-eH*h,
 								x,y,
 								matrix=_.matrix=[]
-							
+
 							_.mask
 								.css({
 									position:'absolute',
@@ -826,7 +826,7 @@
 								})
 								.empty()
 								.appendTo(_.pic)
-								
+
 							for(y=0;y<h;y++)
 								for(x=0;x<w;x++)
 									matrix[y]=matrix[y]?matrix[y]:[],
@@ -845,19 +845,19 @@
 								_.maskC.remove()
 								delete _.maskC
 							}
-							_.maskC=_.mask.children()			
+							_.maskC=_.mask.children()
 						},
 						changeFu:function(n){
 							var _=this
 							if(_.bl)
 								return false
-							
+
 							if(n==_.n)
 								return false
 							_.n=n
 							_.next=_.itms[n]
 							_.direction=n-_.buff
-							
+
 							if(_.pagination&&_.pagination!==true&&_.pagination.data&&_.pagination.data('uCarousel'))
 								_.pagination.uCarousel(n)
 							if(_.direction==_.itms.length-1)
@@ -865,16 +865,16 @@
 							if(_.direction==-1*_.itms.length+1)
 								_.direction=2
 							_.current=_.buff=n
-							
+
 							if(_.numStatus)
 								_.numStatusChFu()
-							
+
 							if(_.pagination)
 								_.pags
 									.removeClass(_.currCl)
 									.eq(n)
 										.addClass(_.currCl)
-							
+
 							if(_.banners!==false&&_.banner)
 								_.bannerHide(_.banner,_)
 							if(_.progressBar)
@@ -882,30 +882,30 @@
 								_.progressBar.stop()
 							if(_.slideshow&&!_.paused&&_.progressBar)
 								_.progressBar.stop().width(0)
-								
+
 							var _fu=function(){
 								//if(_.banner)
 									//$.when(_.banner).then(function(){_.banner.detach()})
 								if($.browser.msie&&$.browser.version<9&&_.preset=='zoomer')
 									_.preset='simpleFade'
 									,_.duration=1000
-								
+
 								if(_.preset_!=_.preset)
 									 _.du=_.duration,
 									 _.ea=_.easing,
 									$.extend(_,_.presets[_.preset]),
 									 _.duration=_.du,
 									 _.easing=_.ea,
-									_.preset_=_.preset								
-								if(_.preset=='random')									
+									_.preset_=_.preset
+								if(_.preset=='random')
 									$.extend(_,_.presets[_.prsts[parseInt(Math.random()*_.prsts.length)]])
 									,_.reverseWay=[true,false][parseInt(Math.random()*2)]
-								
+
 								_.sliceFu()
 								_.maskC.stop().css({backgroundImage:'url('+_.next+')'})
 								_.beforeAnimation()
 								_.showFu()
-								
+
 							}
 							if(_.waitBannerAnimation)
 								$.when(_.banner).then(_fu)
@@ -926,14 +926,14 @@
 							var _=this,
 								way,
 								tmp
-							
+
 							way=_.ways[_.way].call(_)
-						
+
 							if(_.reverseWay)
 								way.reverse()
 							if(_.dirMirror)
 								way=_.dirMirrorFu(way)
-							
+
 							if(_.int)
 								clearInterval(_.int)
 							_.int=setInterval(function(){
@@ -951,15 +951,15 @@
 								void(0)
 							return way
 						},
-						afterShow:function(){			
+						afterShow:function(){
 							var _=this
 							_.pic.css({backgroundImage:'url('+_.next+')'})
-							//_.pic.children().not().remove()			
+							//_.pic.children().not().remove()
 							_.maskC.hide()
 							if(_.slideshow&&!_.paused)
 								_.startSlShFu(0)
 							if(_.banners!==false)
-								_.banner=_.bnnrs[_.n]					
+								_.banner=_.bnnrs[_.n]
 							if(_.banner)
 								$.when($('.'+_.bannerCl,_.me)).then(function(){
 									$('.'+_.bannerCl,_.me).not(_.banner).remove()
@@ -994,12 +994,12 @@
 								})
 						},
 						paginationFu:function(){
-							var _=this					
+							var _=this
 							if(_.pagination===false)
 								return false
-							
+
 							if(_.pagination===true)
-								_.pags=$('<ul></ul>')					
+								_.pags=$('<ul></ul>')
 							else
 								if(typeof _.pagination=='string')
 									_.pags=$(_.pagination)
@@ -1026,8 +1026,8 @@
 								return false
 							})
 							_.pags.addClass(_.paginationCl)
-							_.pags=$('li',_.pags)			
-							_.pags.eq(_.n).addClass(_.currCl)				
+							_.pags=$('li',_.pags)
+							_.pags.eq(_.n).addClass(_.currCl)
 						},
 						startSlShFu:function(prog){
 							var _=this
@@ -1040,12 +1040,12 @@
 								else
 									_.prog=0,
 									clearInterval(_.slShTimer),
-									_.nextFu()						
+									_.nextFu()
 								if(_.progressBar)
 									_.pbchFu()
 							},_.slideshow/100)
 							if(_.playBu)
-								$(_.playBu).removeClass(_.pauseCl)				
+								$(_.playBu).removeClass(_.pauseCl)
 						},
 						pauseSlShFu:function(){
 							var _=this
@@ -1055,10 +1055,10 @@
 								$(_.playBu).addClass(_.pauseCl)
 						},
 						slideshowFu:function(){
-							var _=this				
+							var _=this
 							if(_.slideshow===false)
 								return false
-							
+
 							if(_.playBu)
 								$(_.playBu).bind(_.changeEv,function(){
 									if(!_.paused)
@@ -1077,7 +1077,7 @@
 								_.progressBar
 									.stop()
 									.animate({width:_.prog/100*_.progressBar.parent().width()},{easing:'linear',duration:_.slideshow/100})
-									
+
 						},
 						progressBarFu:function(){
 							var _=this
@@ -1224,11 +1224,11 @@
 										banner.css('top',0)
 									banner
 										.hide()
-										.fadeIn(_.bannerDuration)						
+										.fadeIn(_.bannerDuration)
 								},
 								bannerHide:function(banner,_){
 									banner
-										.fadeOut(_.bannerDuration)						
+										.fadeOut(_.bannerDuration)
 								}
 							}
 						},
@@ -1236,7 +1236,7 @@
 							var _=this
 							if(!_.n)
 								_.n=_.show
-							_.numSt.html('<span class="curr"></span>/<span class="total"></span>')			
+							_.numSt.html('<span class="curr"></span>/<span class="total"></span>')
 							$('.curr',_.numSt).text(_.n+1)
 							$('.total',_.numSt).text(_.itms.length)
 						},
@@ -1252,7 +1252,7 @@
 							if(!_.numSt.parent().length)
 								_.numSt.appendTo(_.me)
 								.addClass(_.numStatusCl)
-								
+
 							_.numStatusChFu()
 						},
 						init:function(){
@@ -1269,14 +1269,14 @@
 						afterAnimation:function(){},
 						beforeAnimation:function(){}
 					}
-			
+
 			typeof o=='object'&&$.extend(_,o)
 			_.me||_.init(_.me=th)
-		})		
+		})
 	}
 })(jQuery)
 
-function swtch(arg,cases){	
+function swtch(arg,cases){
 	return	(typeof arg=='string'||typeof arg=='number')
 		?cases[arg]
 			?cases[arg]
