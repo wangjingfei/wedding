@@ -5,7 +5,7 @@
 
 angular.module('mean.wedding').controller('HomeController', ['$scope', function ($scope) {
     $scope.slideImgs = [];
-    $scope.slideImgs.push('/wedding/assets/img/slide-1.jpg');
+    $scope.slideImgs.push('/wedding/assets/img/slides/slide-1.jpg');
     $scope.slideImgs.push('/wedding/assets/img/slide-2.jpg');
     $scope.slideImgs.push('/wedding/assets/img/slide-3.jpg');
     $scope.slideImgs.push('/wedding/assets/img/slide-4.jpg');

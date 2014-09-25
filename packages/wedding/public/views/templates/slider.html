@@ -1,17 +1,14 @@
 <div class="slider-background" style="background: url({{sliderImgs[currentImgIndex]}}) 0 0 / cover no-repeat;">
-    <div class="slider-mask">
-        <div class="slider-picture" style="background-image: url({{sliderImgs[currentImgIndex]}});">
-
-        </div>
-        <ul class="pags pagination">
-            <li ng-class="{current: currentImgIndex == $index, 'slider-selector': true}" ng-repeat="img in sliderImgs"
-                ng-click="selectImg($index)">
-                <a href="#"><img src="{{img}}" alt="">
-                    <span></span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <div class="slider-mask"></div>
 </div>
+<div class="slider-picture" style="background-image: url({{sliderImgs[currentImgIndex]}});"></div>
+<ul class="pages pagination">
+    <li ng-class="{current: currentImgIndex == $index, 'slider-selector': true}" ng-repeat="img in sliderImgs"
+        ng-click="selectImg($index)">
+        <a href="#" style="background: url({{sliderImgs[$index]}}) 0 0 / cover no-repeat">
+            <span></span>
+        </a>
+    </li>
+</ul>
 <a href="#" class="prev">&nbsp;</a>
 <a href="#" class="next">&nbsp;</a>
