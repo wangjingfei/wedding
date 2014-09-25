@@ -22,8 +22,6 @@ angular.module('mean.wedding').directive('slider', function() {
             // Set the height of the slider.
             element.css('height', sliderHeight + 'px');
 
-            element.css('background-color', 'green'); // Only for test.
-
             // TODO 2. Watch the currentImgIndex and change the picture;
             scope.$watch('currentImgIndex', function(index) {
                 // TODO 1. Background change animation;

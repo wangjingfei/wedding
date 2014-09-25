@@ -10,14 +10,14 @@
 }
 
 slider {
+    position: relative;
     display: block;
 }
 
 .slider-background {
-    position: relative;
     z-index: 1;
     overflow: hidden;
-    height:100%;
+    height:calc(100% - 38px);
 }
 
 .slider-mask {
@@ -32,8 +32,13 @@ slider {
 .slider-picture {
     overflow: hidden;
     opacity: 1;
-    width: 950px;
+    width: 945px;
     height: 425px;
+    background-size: cover;
+    position: absolute;
+    margin-left: -473px;
+    left: 50%;
+    bottom: 160px;
 }
 
 .slider .pic {
@@ -43,7 +48,6 @@ slider {
 
 .slider-pic-main {
     height: 423px;
-    background-color: green;
     position: absolute;
     bottom: 161px;
     z-index: 3;
