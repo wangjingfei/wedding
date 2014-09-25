@@ -1,27 +1,40 @@
 /**
  * Created by fify on 9/25/14.
  */
+'use strict';
 
-angular.module('mean.wedding').directive('slide', function() {
+angular.module('mean.wedding').directive('slider', function() {
     return {
         restrict: 'E',
-        templateUrl: 'wedding/views/templates/slide.html',
+        templateUrl: 'wedding/views/templates/slider.html',
         scope: {
-            slideImgs: '='
+            sliderImgs: '='
         },
         link: function(scope, element, attrs) {
-            var slideHeight = 670;
-            if(attrs.slideHeight) {
-                var slideHeight = scope.$eval(attrs.slideHeight);
+            var sliderHeight = 670;
+            if(attrs.sliderHeight) {
+                sliderHeight = scope.$eval(attrs.sliderHeight);
             }
 
-            // Set slide height.
+            // Show the first image.
+            scope.currentImgIndex = 0;
 
-            // TODO 1. Background change animation;
-            // TODO 2. Wath the currentImgIndex and change the picture;
+            // Set the height of the slider.
+            element.css('height', sliderHeight + 'px');
+
+            element.css('background-color', 'green'); // Only for test.
+
+            // TODO 2. Watch the currentImgIndex and change the picture;
+            scope.$watch('currentImgIndex', function(index) {
+                // TODO 1. Background change animation;
+            });
             // TODO 3. Automatically change the currentImgIndex;
             // TODO 4. Enable previous and next button;
             // TODO 5.
+
+            scope.selectImg = function(index) {
+                scope.currentImgIndex = index;
+            };
         }
-    }
+    };
 });
