@@ -18,11 +18,11 @@ slider {
     overflow: hidden;
     height:calc(100% - 38px);
     opacity: 0.8;
-    -webkit-transition: background-image 1s ease-in-out;
-    -moz-transition: background-image 1s ease-in-out;
-    -ms-transition: background-image 1s ease-in-out;
-    -o-transition: background-image 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
+    -webkit-transition: background-image 1.5s ease-in-out;
+    -moz-transition: background-image 1.5s ease-in-out;
+    -ms-transition: background-image 1.5s ease-in-out;
+    -o-transition: background-image 1.5s ease-in-out;
+    transition: background-image 1.5s ease-in-out;
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -ms-filter: blur(3px);
@@ -53,11 +53,11 @@ slider {
     left: 50%;
     bottom: 160px;
     z-index: 1;
-    -webkit-transition: background-image 1s ease-in-out;
-    -moz-transition: background-image 1s ease-in-out;
-    -ms-transition: background-image 1s ease-in-out;
-    -o-transition: background-image 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
+    -webkit-transition: background-image 1.5s ease-in-out;
+    -moz-transition: background-image 1.5s ease-in-out;
+    -ms-transition: background-image 1.5s ease-in-out;
+    -o-transition: background-image 1.5s ease-in-out;
+    transition: background-image 1.5s ease-in-out;
 }
 
 .slider {
