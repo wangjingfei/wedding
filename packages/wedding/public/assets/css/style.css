@@ -46,6 +46,44 @@ a:hover {
     text-decoration: none;
 }
 
+.logo {
+    width: 265px;
+    height: 112px;
+}
+
+.logo-title {
+    line-height: 130px;
+}
+
+.logo-subtitle {
+    position: absolute;
+    bottom: 28px;
+    font-family: 'PT Sans Narrow', XinGothic, sans-serif;;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    word-spacing: 5px;
+    font-size: 16px;
+    color: gray;
+}
+
+.logo-name {
+    font-family: 'Great Vibes', QXyingbixing, cursive;;
+    font-size: 40px;
+    float: left;
+    font-weight: normal;
+    color: white;
+}
+
+.logo-separator {
+    float: left;
+    background: url(/wedding/assets/img/tb4.png) 0 0 no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    margin-top: 25px;
+}
+
 .button-1 {
     background: #91abb5;
     color: #fff;
