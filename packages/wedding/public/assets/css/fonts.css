@@ -27,6 +27,17 @@
 }
 
 @font-face {
+    font-family: 'QXyingbixing';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/wedding/assets/fonts/QXyingbixing.eot');
+    src: local('QXyingbixing Regular'), local('QXyingbixing'),
+    url('/wedding/assets/fonts/QXyingbixing.woff') format('woff'),
+    url('/wedding/assets/fonts/QXyingbixing.ttf') format('ttf'),
+    url('/wedding/assets/fonts/QXyingbixing.svg') format('svg');
+}
+
+@font-face {
     font-family: 'XinGothic';
     font-style: normal;
     font-weight: 400;
