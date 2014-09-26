@@ -2,7 +2,6 @@
     "core": {
         "css": {
             "bower_components/build/css/dist.min.css": [
-                "library/css/fonts.css",
                 "library/css/grid_24.css",
                 "library/css/style.css"
             ]
