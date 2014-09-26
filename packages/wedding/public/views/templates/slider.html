@@ -2,9 +2,9 @@
 <div class="slider-mask"></div>
 <div class="slider-picture" style="background-image: url({{sliderImgs[currentImgIndex]}});"></div>
 <ul class="pages slider-pagination">
-    <li ng-class="{current: currentImgIndex == $index, 'slider-selector': true}" ng-repeat="img in sliderImgs"
+    <li ng-class="{current: currentImgIndex == $index, 'slider-selector': true}" ng-repeat="img in sliderNavImgs"
         ng-click="selectImg($index)">
-        <a href="#" style="background: url({{sliderImgs[$index]}}) 0 0 / cover no-repeat">
+        <a href="#" style="background: url({{img}}) 0 0 / cover no-repeat">
             <span></span>
         </a>
     </li>

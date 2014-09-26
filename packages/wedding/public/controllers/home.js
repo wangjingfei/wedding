@@ -9,22 +9,10 @@ angular.module('mean.wedding').controller('HomeController', ['$scope', function 
     $scope.slideImgs.push('/wedding/assets/img/slides/slide-2.jpg');
     $scope.slideImgs.push('/wedding/assets/img/slides/slide-3.jpg');
     $scope.slideImgs.push('/wedding/assets/img/slides/slide-4.jpg');
-//    $(document).ready(function () {
-//        $('.slider')._TMS({
-//            show: 0,
-//            pauseOnHover: true,
-//            prevBu: '.prev',
-//            nextBu: '.next',
-//            playBu: false,
-//            duration: 800,
-//            preset: 'fade',
-//            pagination: '.pags',
-//            pagNums: false,
-//            slideshow: 7000,
-//            numStatus: false,
-//            banners: false,
-//            waitBannerAnimation: false,
-//            progressBar: false
-//        });
-//    });
+
+    $scope.slideNavImgs = [];
+    $scope.slideNavImgs.push('/wedding/assets/img/slides/slide-1-sm.jpg');
+    $scope.slideNavImgs.push('/wedding/assets/img/slides/slide-2-sm.jpg');
+    $scope.slideNavImgs.push('/wedding/assets/img/slides/slide-3-sm.jpg');
+    $scope.slideNavImgs.push('/wedding/assets/img/slides/slide-4-sm.jpg');
 }]);

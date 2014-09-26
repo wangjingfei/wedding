@@ -8,7 +8,8 @@ angular.module('mean.wedding').directive('slider', ['$interval', function($inter
         restrict: 'E',
         templateUrl: 'wedding/views/templates/slider.html',
         scope: {
-            sliderImgs: '='
+            sliderImgs: '=',
+            sliderNavImgs: '='
         },
         link: function(scope, element, attrs) {
             var sliderHeight = 670;
