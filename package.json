@@ -65,7 +65,6 @@
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-env": "^0.4.1",
-    "grunt-font-optimizer": "^0.2.5",
     "grunt-nodemon": "0.2.1",
     "load-grunt-tasks": "^0.4.0",
     "lodash": "^2.4.1",
@@ -89,7 +88,6 @@
     "view-helpers": "^0.1.4"
   },
   "devDependencies": {
-    "grunt-font-optimizer": "^0.2.5",
     "grunt-karma": "^0.8.2",
     "grunt-mocha-test": "^0.10.2",
     "karma": "^0.12.10",

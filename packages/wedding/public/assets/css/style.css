@@ -40,7 +40,6 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    text-decoration: none;
 }
 
 a:hover {
@@ -202,7 +201,7 @@ ul {
 }
 
 ul.list-1 li {
-    padding: 0px 0 10px 15px;
+    padding: 0 0 10px 15px;
     line-height: 18px;
     background: url(/wedding/assets/img/marker-1.gif) 0 6px no-repeat;
 }
@@ -251,7 +250,7 @@ ul.list-1 li a:hover {
 
 .img-indent {
     float: left;
-    margin: 0px 10px 0px 0;
+    margin: 0 10px 0 0;
 }
 
 .line-height {
@@ -259,8 +258,8 @@ ul.list-1 li a:hover {
 }
 
 .last {
-    margin-right: 0px !important;
-    padding-right: 0px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
 }
 
 .top-1 {
@@ -309,7 +308,7 @@ ul.list-1 li a:hover {
 }
 
 .pad-0 {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 }
 
 .p1 {
@@ -342,14 +341,14 @@ nav {
 }
 
 ul.menu {
-    margin: 0px 0px 0px 0px;
+    margin: 0;
     display: inline-block;
 }
 
 ul.menu li {
     float: left;
     line-height: 24px;
-    margin: 0px 13px 0px 0px;
+    margin: 0 13px 0 0;
 }
 
 ul.menu li:hover, ul.menu li.current {
@@ -373,10 +372,10 @@ ul.menu li a:hover, ul.menu li.current a {
 }
 
 /*********************************content*************************************/
-#content {
+.page-content {
     width: 960px;
     margin: 0 auto;
-    padding: 0px 0px 27px 0;
+    padding: 0 0 27px 0;
     background: url(/wedding/assets/img/line.gif) center 0 no-repeat;
 }
 

@@ -7,8 +7,6 @@ var paths = {
 };
 
 module.exports = function (grunt) {
-    grunt.loadNpmTasks('grunt-font-optimizer');
-
     if (process.env.NODE_ENV !== 'production') {
         require('time-grunt')(grunt);
     }
