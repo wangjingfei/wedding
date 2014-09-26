@@ -61,6 +61,11 @@ slider {
     transition: background-image 1s ease-in-out;
 }
 
+.slider {
+    height: 668px;
+    overflow: hidden;
+}
+
 .slider .pic {
     background-size: cover !important;
     width: 100% !important;
