@@ -56,7 +56,7 @@ angular.module('mean.wedding').directive('slider', ['$interval', function($inter
 
                 interval = $interval(function() {
                     scope.selectNext();
-                }, 7*1000);
+                }, 10*1000);
             }
 
             // Start the interval counter.
