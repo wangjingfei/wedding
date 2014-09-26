@@ -27,7 +27,7 @@ module.exports = {
     */
   },
   app: {
-    name: 'Anying Wedding'
+    name: 'We Are Married'
   },
   facebook: {
     clientID: 'APP_ID',

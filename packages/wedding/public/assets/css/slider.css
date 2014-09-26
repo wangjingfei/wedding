@@ -34,7 +34,7 @@ slider {
     top: 0;
     z-index: 1;
     background: url('/wedding/assets/img/background.gif') 0 0 repeat;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .slider-picture {

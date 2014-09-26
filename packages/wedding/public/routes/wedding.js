@@ -4,7 +4,7 @@
 angular.module('mean.wedding').config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {
         url: '/home',
-        templateUrl: 'wedding/views/index.html',
+        templateUrl: 'wedding/views/home.html',
         controller: 'HomeController'
     }).state('wedding', {
         url: '/wedding',

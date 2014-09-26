@@ -6,7 +6,7 @@ module.exports = {
     debug: true
   },
   app: {
-    name: 'Anying Wedding - Development'
+    name: 'We Are Married - Development'
   },
   facebook: {
     clientID: 'DEFAULT_APP_ID',
