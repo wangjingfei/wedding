@@ -1,4 +1,4 @@
-<div ng-controller="HeaderController">
+<div ng-controller="HeaderController" style="position: relative;">
     <div class="header-nav">
         <header>
             <h1>
@@ -28,7 +28,6 @@
         </header>
     </div>
 
-    <div ng-if="!$state.includes('home')" class="sub-pages">
-
-    </div>
+    <div ng-if="!$state.includes('home')" class="sub-pages"></div>
+    <div ng-if="!$state.includes('home')" class="sub-pages-mask"></div>
 </div>
