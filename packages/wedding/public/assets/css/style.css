@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    font: 14px/18px "Times New Roman", XinGothic, Times, serif;
+    font: 14px/18px XinGothic, "Times New Roman", Times, serif;
     color: #979797;
     min-width: 1020px;
     background: #fff;
