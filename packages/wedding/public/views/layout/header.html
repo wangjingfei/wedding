@@ -28,6 +28,6 @@
         </header>
     </div>
 
-    <div ng-if="!$state.includes('home')" class="sub-pages"></div>
-    <div ng-if="!$state.includes('home')" class="sub-pages-mask"></div>
+    <div ng-if="!$state.is('home') && !$state.is('root')" class="sub-pages"></div>
+    <div ng-if="!$state.is('home') && !$state.is('root')" class="sub-pages-mask"></div>
 </div>
