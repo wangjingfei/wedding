@@ -8,3 +8,11 @@
   <!-- Livereload script rendered -->
   <script type="text/javascript" src="{{'//' + req.hostname + ':35729/livereload.js'}}"></script>
 {% endif %}
+
+{% if (process.env.NODE_ENV == 'production') %}
+<!-- Enable baidu tongji on production. -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fede0ec31a96933559f4bd5c22a25bf43' type='text/javascript'%3E%3C/script%3E"));
+</script>
+{% endif %}
