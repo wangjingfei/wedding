@@ -27,7 +27,7 @@ module.exports = {
     */
   },
   app: {
-    name: 'We Are Married'
+    name: '我们结婚了!'
   },
   facebook: {
     clientID: 'APP_ID',
@@ -54,7 +54,7 @@ module.exports = {
     clientSecret: 'SECRET_KEY',
     callbackURL: 'http://localhost:3000/auth/linkedin/callback'
   },
-  emailFrom: 'SENDER EMAIL ADDRESS', // sender address like ABC <abc@example.com>
+  emailFrom: 'wangjingfei@live.com', // sender address like ABC <abc@example.com>
   mailer: {
     service: 'SERVICE_PROVIDER',
     auth: {
