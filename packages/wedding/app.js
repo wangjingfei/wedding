@@ -15,10 +15,10 @@ Wedding.register(function (app, auth, database) {
     //We enable routing. By default the Package Object is passed to the routes
     Wedding.routes(app, auth, database);
 
+    Wedding.aggregateAsset('css', 'reset.css');
     Wedding.aggregateAsset('css', 'demo.css');
     Wedding.aggregateAsset('css', 'fonts.css');
     Wedding.aggregateAsset('css', 'grid_24.css');
-    Wedding.aggregateAsset('css', 'reset.css');
     Wedding.aggregateAsset('css', 'wedding.css');
     Wedding.aggregateAsset('css', 'slider.css');
     Wedding.aggregateAsset('css', 'style.css');
