@@ -2,7 +2,11 @@
 
 //Setting up route
 angular.module('mean.wedding').config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('home', {
+    $stateProvider.state('root', {
+        url: '/',
+        templateUrl: 'wedding/views/home.html',
+        controller: 'HomeController'
+    }).state('home', {
         url: '/home',
         templateUrl: 'wedding/views/home.html',
         controller: 'HomeController'
@@ -24,5 +28,5 @@ angular.module('mean.wedding').config(['$stateProvider', '$urlRouterProvider', f
         templateUrl: 'wedding/views/contacts.html'
     });
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 }]);
