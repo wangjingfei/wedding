@@ -176,6 +176,7 @@ a:hover {
 .text-2 {
     font-weight: bold;
     color: #b5b5b5;
+    margin-top: 10px;
 }
 
 .text-3 {
@@ -301,6 +302,13 @@ ul.list-1 li a:hover {
 
 .fright {
     float: right;
+}
+
+.solo-picture {
+    height: 183px;
+    background-size: cover;
+    width: 140px;
+    margin-right: 10px;
 }
 
 .img-indent {
