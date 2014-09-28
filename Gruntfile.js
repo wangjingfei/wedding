@@ -112,8 +112,7 @@ module.exports = function (grunt) {
 			subset: {
                 options: {
                     html: {
-                        pattern: '\\.html?$',
-                        elements: ['div', 'p']
+                        pattern: '\\.html?$'
                     },
                     js: {
                         pattern: '\\.js$'
