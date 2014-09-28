@@ -10,6 +10,7 @@ module.exports = function (grunt) {
     if (process.env.NODE_ENV !== 'production') {
         require('time-grunt')(grunt);
     }
+    grunt.loadNpmTasks('grunt-ziti');
 
     // Project Configuration
     grunt.initConfig({
@@ -107,13 +108,37 @@ module.exports = function (grunt) {
                 configFile: 'karma.conf.js'
             }
         },
-        fontmin: {
-            default: {
+		ziti: {
+			subset: {
                 options: {
-
+                    html: {
+                        pattern: '\\.html?$',
+                        elements: [ 'section', 'p' ],
+                        comments: [ 'ziti' ]
+                    },
+                    js: {
+                        pattern: '\\.js$'
+                    },
+                    css: {
+                        pattern: '\\.css$'
+                    },
+                    font: {
+                        pattern: '\\.ttf$',
+                        charsFilePattern: '\\.txt$'
+                    },
+                    subset: true,
+                    optimize: true,
+                    convert: true,
+                    deleteCharsFile: true
                 },
-            }
-        }
+                files: {
+                    'packages/wedding/public/assets/fonts/XinGothic-Regular.ttf': [
+                        'packages/wedding/public/views/**/*.html',
+                        'fonts/XinGothic-Regular.ttf'
+                    ]
+                }
+			}
+		}
     });
 
     //Load NPM tasks
