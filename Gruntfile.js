@@ -113,8 +113,7 @@ module.exports = function (grunt) {
                 options: {
                     html: {
                         pattern: '\\.html?$',
-                        elements: [ 'section', 'p' ],
-                        comments: [ 'ziti' ]
+                        elements: ['div', 'p']
                     },
                     js: {
                         pattern: '\\.js$'
@@ -133,8 +132,28 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'packages/wedding/public/assets/fonts/XinGothic-Regular.ttf': [
-                        'packages/wedding/public/views/**/*.html',
+                        'packages/**/public/views/**/*.html',
                         'fonts/XinGothic-Regular.ttf'
+                    ],
+                    'packages/wedding/public/assets/fonts/XinGothic-Bold.ttf': [
+                        'packages/**/public/views/**/*.html',
+                        'fonts/XinGothic-Bold.ttf'
+                    ],
+                    'packages/wedding/public/assets/fonts/QXyingbixing.ttf': [
+                        'packages/**/public/views/**/*.html',
+                        'fonts/QXyingbixing.ttf'
+                    ],
+                    'packages/wedding/public/assets/fonts/PTSans-NarrowBold.ttf': [
+                        'packages/**/public/views/**/*.html',
+                        'fonts/PTSans-NarrowBold.ttf'
+                    ],
+                    'packages/wedding/public/assets/fonts/PTSans-Narrow.ttf': [
+                        'packages/**/public/views/**/*.html',
+                        'fonts/PTSans-Narrow.ttf'
+                    ],
+                    'packages/wedding/public/assets/fonts/GreatVibes-Regular.ttf': [
+                        'packages/**/public/views/**/*.html',
+                        'fonts/GreatVibes-Regular.ttf'
                     ]
                 }
 			}
