@@ -22,6 +22,7 @@ Wedding.register(function (app, auth, database) {
     Wedding.aggregateAsset('css', 'wedding.css');
     Wedding.aggregateAsset('css', 'slider.css');
     Wedding.aggregateAsset('css', 'style.css');
+    Wedding.aggregateAsset('css', 'under-construction.css');
 
     /*
      //Uncomment to use. Requires meanio@0.3.7 or above
